@@ -1,22 +1,21 @@
-document.querySelectorAll('.button').forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.toggle('button-active');
+document.addEventListener('DOMContentLoaded', function (event) {
+  document.querySelectorAll('.button').forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('button-active');
+    });
   });
 });
 
-// const accor = document.getElementsByClassName('button');
-// let i;
-
-// for (i = 0; i < accor.length; i++) {
-//   accor[i].addEventListener('click', () => {
-//     this.classList.toggle('button-active');
-//   });
-// }
-
-// window.addEventListener('click', () => {
-//   const accor = document.querySelectorAll('.button');
-//   accor.forEach(x => x.classList.toggle('button-active'));
+// document.addEventListener('DOMContentLoaded', function (event) {
+//   const accor = document.getElementsByClassName('button');
+//   for (let i = 0; i < accor.length; i++) {
+//     let item = accor[i];
+//     item.addEventListener('click', () => {
+//       item.classList.toggle('button-active');
+//     });
+//   }
 // });
+
 
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
