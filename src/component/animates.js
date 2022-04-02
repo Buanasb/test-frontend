@@ -1,6 +1,6 @@
 document.querySelectorAll('.button').forEach(button => {
   button.addEventListener('click', () => {
-    button.classList.toggle('button-active');
+    button.classList.toggle('button-activ');
   });
 });
 
